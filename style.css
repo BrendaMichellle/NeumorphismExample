@@ -1,0 +1,145 @@
+/*body: #e4f1f8
+buttons: #f4f9fc
+red: #ff4141
+font-family: 'Exo 2', sans-serif;
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e4f1f8;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fas {
+  font-size: 25px;
+  color: #5d5f61;
+}
+
+button {
+  -webkit-appearance: none;
+  border: none;
+  background-color: #f4f9fc;
+  border-radius: 50%;
+  box-shadow: -2px -2px 4px 2px rgba(255, 250, 242, 0.5),
+    3px 3px 6px 2px rgba(70, 70, 70, 0.12);
+}
+
+.header {
+  display: grid;
+  grid-template-areas: 'back like';
+  grid-gap: 250px;
+  margin-top: 0.4em;
+}
+
+.goBack {
+  grid-area: back;
+  height: 50px;
+  width: 50px;
+}
+
+.like {
+  grid-area: like;
+  height: 50px;
+  width: 50px;
+  background-color: #ff4141;
+  box-shadow: inset -2px -2px 4px 2px #e73b3b, inset 3px 3px 6px 2px #fd5858;
+}
+
+.fa-heart {
+  color: #f4f9fc;
+}
+
+.controlBtns {
+  height: 50px;
+  width: 50px;
+}
+
+.musicBar {
+  background-color: #f4f9fc;
+  height: 15px;
+  width: 80vw;
+  position: relative;
+  top: 90px;
+  border-radius: 10px;
+  box-shadow: -2px -2px 4px 2px rgba(255, 255, 255, 0.5),
+    2px 2px 4px 2px rgba(70, 70, 70, 0.12);
+}
+
+.span {
+  background-color: #ff4141;
+  height: 11px;
+  width: 30vw;
+  position: relative;
+  top: 3px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.span::after {
+  content: '';
+  background-color: transparent;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 5px solid #f4f9fc;
+  position: absolute;
+  top: -5px;
+  left: 95px;
+  box-shadow: -1px -1px 2px 1px rgba(255, 250, 242, 0.5),
+    2px 2px 4px 1px rgba(70, 70, 70, 0.12);
+}
+
+p {
+  display: inline;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 115px;
+}
+
+.play {
+  margin: 0 15px 0 15px;
+  height: 80px;
+  width: 80px;
+}
+
+.left,
+.right {
+  position: relative;
+  top: 15px;
+}
+
+img {
+  border-radius: 50%;
+  margin-top: 50px;
+  border: 6px solid #f4f9fc;
+  box-shadow: -6px -6px 8px 6px rgba(255, 250, 242, 0.5),
+    5px 5px 15px 4px rgba(70, 70, 70, 0.2);
+}
+
+.title,
+.song {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  color: #5d5f61;
+}
+
+.song {
+  font-size: 20px;
+  position: relative;
+  left: 70px;
+}
